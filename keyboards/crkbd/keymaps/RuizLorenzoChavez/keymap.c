@@ -65,11 +65,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NAV] = LAYOUT_split_3x5_3(
         //,--------------------------------------------.                    ,--------------------------------------------.
-            MS_BTN2, MS_BTN4,   MS_UP, MS_BTN5, MS_WHLU,                      KC_COPY, KC_PGUP, LSFT_T(KC_UP), KC_HOME, C(KC_A),
+            MS_BTN2, MS_BTN4,   MS_UP, MS_BTN5, MS_WHLU,                      C(KC_C), KC_PGUP,   KC_UP, KC_HOME, C(KC_A),
         //|--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------|
-            MS_BTN1, MS_LEFT, MS_DOWN, MS_RGHT, MS_WHLD,                       KC_CUT, C_S_T(KC_LEFT), RSFT_T(KC_DOWN), RCS_T(KC_RGHT), KC_BSPC,
+            MS_BTN1, MS_LEFT, MS_DOWN, MS_RGHT, MS_WHLD,                      C(KC_X), LCTL_TC(KC_LEFT), KC_DOWN, RCTL_T(KC_RGHT), KC_RSFT,
         //|--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------|
-            XXXXXXX, XXXXXXX, XXXXXXX, MS_WHLL, MS_WHLR,                      KC_PSTE, KC_PGDN, KC_PSCR,  KC_END, KC_DEL,
+            XXXXXXX, XXXXXXX, XXXXXXX, MS_WHLL, MS_WHLR,                      KC_PSCR, KC_PGDN,  KC_DEL,  KC_END, C(KC_V),
         //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------|
                                        _______, _______, _______,    _______, _______, _______
                                    //`--------------------------'  `--------------------------'
@@ -79,9 +79,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         //,--------------------------------------------.                    ,--------------------------------------------.
             XXXXXXX, XXXXXXX, KC_VOLU, XXXXXXX, XXXXXXX,                        KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,
         //|--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------|
-            KC_MUTE, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX,                        KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,
+            KC_MUTE, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX,                        KC_F5,   KC_F4,   KC_F3,   KC_F2,   KC_F1,
         //|--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------|
-            XXXXXXX, XXXXXXX, KC_VOLD, XXXXXXX, XXXXXXX,                       KC_F11,  KC_F12, KC_LALT, XXXXXXX, XXXXXXX,
+            XXXXXXX, XXXXXXX, KC_VOLD, XXXXXXX, XXXXXXX,                       XXXXXX, XXXXXXX, XXXXXXX,  KC_F11,   KC_F12
         //|--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------|
                                        _______, _______, _______,    _______, _______, _______
                                    //`--------------------------'  `--------------------------'
@@ -96,3 +96,4 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
   [3] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU), ENCODER_CCW_CW(KC_MPRV, KC_MNXT), ENCODER_CCW_CW(RM_VALD, RM_VALU), ENCODER_CCW_CW(KC_RGHT, KC_LEFT), },
 };
 #endif
+

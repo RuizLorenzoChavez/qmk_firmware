@@ -59,7 +59,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MK_MOMENTUM_THRESHOLD 25  // Minimum time before momentum kicks in
 
 // Additional settings to fine-tune movement
-#define MOUSEKEY_MOVE_DELTA 10      // Initial movement distance per interval
+#define MOUSEKEY_MOVE_DELTA 5      // Initial movement distance per interval
 #define MOUSEKEY_INITIAL_SPEED 600 // Initial speed (units/minute)
 #define MOUSEKEY_BASE_SPEED 5000   // Base movement speed (units/minute)
 #define MOUSEKEY_DECELERATED_SPEED 400  // Slower speed (units/minute)
