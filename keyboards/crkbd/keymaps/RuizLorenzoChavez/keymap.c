@@ -24,7 +24,7 @@ enum layers {
     _SYM,
     _NAV,
     _FUN
-}
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT_split_3x5_3(
