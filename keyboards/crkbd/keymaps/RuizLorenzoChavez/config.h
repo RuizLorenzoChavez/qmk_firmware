@@ -41,3 +41,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #define RGBLIGHT_SAT_STEP 17
     #define RGBLIGHT_VAL_STEP 17
 #endif
+
+
+// Enable Kinetic mode for mouse keys
+#define MK_KINETIC_SPEED
+
+// Basic mouse key settings
+#define MOUSEKEY_DELAY 8           // Delay before cursor movement (milliseconds)
+#define MOUSEKEY_INTERVAL 16       // Time between cursor movements (milliseconds)
+
+// Kinetic acceleration parameters
+#define MK_CURVE_LINEAR 1.0        // Linear acceleration factor
+#define MK_CURVE_OFFSET 0          // Start acceleration after this many intervals
+#define MK_CURVE_CENTER 35         // Inflection point of the acceleration curve
+#define MK_CURVE_SCALE 30          // Scale factor for the acceleration curve
+#define MK_MOMENTUM_MULT 1.3       // Momentum multiplication factor
+#define MK_MOMENTUM_THRESHOLD 42   // Minimum time before momentum kicks in
+
+// Additional settings to fine-tune movement
+#define MOUSEKEY_MOVE_DELTA 5      // Initial movement distance per interval
+#define MOUSEKEY_INITIAL_SPEED 100 // Initial speed (units/minute)
+#define MOUSEKEY_BASE_SPEED 1000   // Base movement speed (units/minute)
+#define MOUSEKEY_DECELERATED_SPEED 400  // Slower speed (units/minute)
+#define MOUSEKEY_ACCELERATED_SPEED 3000 // Faster speed (units/minute)
